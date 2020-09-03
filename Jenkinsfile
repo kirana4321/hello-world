@@ -1,4 +1,3 @@
-#scripted pipeline with advanced scripting capabilites(Grrovy) and Declarative Pipeline
 pipeline{
     agent any
     stages {
