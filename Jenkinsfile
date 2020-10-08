@@ -17,6 +17,17 @@ pipeline{
             }
         }
     }
+    post{
+        always {
+            //
+        }
+        success{
+            echo 'Build success'
+        }
+        failure{
+            echo 'build failed'
+        }
+    }
 }
 
 node {
