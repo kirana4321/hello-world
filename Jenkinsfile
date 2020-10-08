@@ -18,9 +18,6 @@ pipeline{
         }
     }
     post{
-        always {
-            //
-        }
         success{
             echo 'Build success'
         }
