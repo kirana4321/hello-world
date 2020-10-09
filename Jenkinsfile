@@ -24,12 +24,6 @@ pipeline{
         stage("deploy only"){
             steps{
                 echo 'Print Deploying a new app'
-                withCredentials([
-                    usernamePassword(credentials: 'SERVER_CREDENTIALS', usernameVariable: USER, passwordVariable: PWD)
-                ]){
-                    echo "Test sai"
-                    sh "some script ${USER} ${PWD}"
-                }
             }
         }
     }
