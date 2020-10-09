@@ -48,7 +48,3 @@ pipeline{
         }
     }
 }
-
-node {
-  //grovvy script
-}
