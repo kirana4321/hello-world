@@ -31,7 +31,7 @@ pipeline{
         stage("deploy only"){
             steps{
                 echo 'Print Deploying a new app'
-                echo "deploying version ${VERSION}"
+                echo "deploying version ${params.VERSION}"
                 echo 'FYI, we should use params.Version'
             }
         }
