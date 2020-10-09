@@ -27,6 +27,7 @@ pipeline{
                 withCredentials([
                     usernamePassword(credentials: 'SERVER_CREDENTIALS', usernameVariable: USER, passwordVariable: PWD)
                 ]){
+                    echo "Test sai"
                     sh "some script ${USER} ${PWD}"
                 }
             }
