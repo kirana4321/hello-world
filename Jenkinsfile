@@ -4,8 +4,8 @@ pipeline{
         choice(name: 'VERSION', choices:['1.1.0','1.2.0'], description: '')
         booleanParam(name: 'executeTests', defaultValue: true, description: '')
     }
-    tools{
-        maven maven
+    //tools{
+     //   maven maven
     }
     environment {
         NEW_VERSION = '1.3.0'
@@ -17,7 +17,7 @@ pipeline{
             steps{
                 echo 'Print Building a new app'
                 echo "building the version ${NEW_VERSION}"
-                sh "mvn install"
+       //         sh "mvn install"
             }
         }
         stage("test"){
