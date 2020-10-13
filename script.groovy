@@ -8,7 +8,7 @@ def testApp(){
 
 
 def deployApp(){
-    echo "Groovy script to deploy an application version ${params.VERSION}""
+    echo "Groovy script to deploy an application version ${params.VERSION}"
 }
 
 return this
